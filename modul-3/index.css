@@ -1,0 +1,58 @@
+/* styling semua elemen <h1> */
+h1 {
+    color: #2C3E50;
+    font-size: 2rem;
+}
+/* styling semua elemen dengan class="intro" */
+.intro {
+    color: #27AE60;
+    font-style: italic;
+}
+/* Styling elemen dengan id="khusus" */
+#khusus {
+    background-color: #FEF9E7;
+    padding: 10px;
+    border-left: 4px solit #F29C12
+}
+/* Selector type */
+nav { background: #2C3E50; padding: 10px; }
+
+/* Selector descendant */
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+/* Pseudo-class */
+nav a:hover { color: #F39C12;}
+
+*/ Class */
+.aktif { font-weight: bold;
+border-bottom: 2px solit #F39C12;} 
+
+/* Direct child */
+.kartu > h2 { color: #2471A3;}
+
+/* Attribute selector */
+input[type='text']:focus {
+    border: 2px solid #BDC3C7;
+    padding: 8px;
+    border-radius: 4px;
+}
+    input[type='text']:focus {
+        border-color: #2471A3;
+        outline: none;
+    
+}
+
+/* Siapa yang menang? */
+/* (0,0,0,1) */
+p { color: black; }
+/* (0,0,1,0) - menang dari .teks-biru */
+.teks-biru { color: blue; }
+/* Dua class - sama specificity, */
+/* yang terakhir menang */
+.a { color: orange; }
+.b { color: purple; }
+/* <p class='a b'> purple */

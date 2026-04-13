@@ -1,0 +1,155 @@
+/* =====================
+   1. RESET & BASE
+===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --warna-utama: #6a5acd;
+    --warna-kedua: #f4f4f4;
+    --warna-gelap: #333;
+    --warna-terang:#fff;
+    --warna-aksen: #ff7a00;
+
+    --font-utama: 'Segoe UI', sans-serif;
+}
+
+body {
+    font-family: var(--font-utama);
+    background-color: var(--warna-kedua);
+    line-height: 1.6;
+}
+
+/* =====================
+   2. HEADER
+===================== */
+header {
+    background: linear-gradient(to right, #6a5acd, #836fff);
+    color: var(--warna-terang);
+    text-align: center;
+    padding: 20px;
+}
+
+/* =====================
+   3. NAVBAR
+===================== */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: var(--warna-utama);
+    padding: 10px;
+
+    position: sticky;
+    top: 0;
+}
+
+.navbar a {
+    color: var(--warna-terang);
+    text-decoration: none;
+    padding: 8px 12px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background-color: var(--warna-aksen);
+    border-radius: 5px;
+}
+
+/* =====================
+   4. MAIN
+===================== */
+main {
+    padding: 20px;
+}
+
+/* =====================
+   5. SECTION TENTANG
+===================== */
+#tentang {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+#tentang img {
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* =====================
+   6. SECTION KEAHLIAN
+===================== */
+#keahlian ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    list-style: none;
+}
+
+#keahlian li {
+    background-color: var(--warna-utama);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 20px;
+}
+
+/* =====================
+   7. SECTION PENGALAMAN
+===================== */
+#pengalaman {
+    margin: 30px 0;
+}
+
+/* =====================
+   8. FORM KONTAK
+===================== */
+form {
+    max-width: 500px;
+}
+
+form div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: var(--warna-utama);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--warna-aksen);
+}
+
+/* =====================
+   9. FOOTER
+===================== */
+footer {
+    background-color: var(--warna-gelap);
+    color: var(--warna-terang);
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+}

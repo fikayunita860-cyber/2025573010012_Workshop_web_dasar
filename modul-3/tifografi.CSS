@@ -1,0 +1,81 @@
+/* CSS Variables — definisikan di :root agar bisa dipakai global */ 
+:root { 
+    --warna-utama:    #2E86C1; 
+    --warna-aksen:    #E74C3C; 
+    --warna-teks:     #2C3E50; 
+    --warna-bg:       #F8F9FA; 
+    --font-utama:     'Segoe UI', Arial, sans-serif; 
+    --radius:          8px; 
+} 
+  
+body { 
+    background-color: var(--warna-bg); 
+    color:            var(--warna-teks); 
+    font-family:      var(--font-utama); 
+} 
+  
+/* Demo format warna */ 
+.warna-hex   { background-color: #3498DB; } 
+.warna-rgb   { background-color: rgb(52, 152, 219); } 
+.warna-rgba  { background-color: rgba(52, 152, 219, 0.4); } 
+.warna-hsl   { background-color: hsl(204, 70%, 53%); } 
+.warna-var   { background-color: var(--warna-utama); } 
+  
+.kotak-warna { 
+    display: inline-block; 
+    width: 140px; height: 60px; 
+    margin: 5px; padding: 8px; 
+    color: white; font-size: 0.8rem; 
+    border-radius: var(--radius); 
+    vertical-align: top; 
+}
+
+h1 { 
+    font-size:      2.5rem;        /* 40px jika root = 16px */ 
+    font-weight:    700; 
+    line-height:    1.2; 
+    letter-spacing: -0.02em;       /* sedikit rapat untuk heading besar */ 
+    color:          var(--warna-utama); 
+} 
+  
+h2 { 
+    font-size:   1.75rem; 
+    font-weight: 600; 
+    margin-top:  1.5rem; 
+    margin-bottom: 0.5rem; 
+} 
+  
+p { 
+    font-size:   1rem;             /* 16px */ 
+    line-height: 1.7;              /* tanpa unit = relatif terhadap font-size */ 
+    margin-bottom: 1rem; 
+} 
+.teks-besar  { font-size: 1.25rem; } 
+.teks-kecil  { font-size: 0.875rem; color: #777; } 
+.teks-tengah { text-align: center; } 
+.uppercase   { text-transform: uppercase; letter-spacing: 0.08em; } 
+.no-underline { text-decoration: none; } 
+
+.container { 
+    max-width: 800px;      /* px: lebar maksimum */ 
+    width: 90%;            /* %: 90% lebar parent, responsif */ 
+    margin: 0 auto;        /* auto: center horizontal */ 
+    padding: 0 1rem;       /* rem: padding kiri-kanan */ 
+} 
+.hero {
+     height: 50vh;          /* vh: setengah tinggi viewport */ 
+    background: linear-gradient(135deg, var(--warna-utama), var(--warna-aksen)); 
+    display: flex; 
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    font-size: 2rem; 
+} 
+  
+/* Perbandingan px vs rem */ 
+.font-px  { font-size: 16px; }    /* tidak berubah jika user ubah preferensi */ 
+.font-rem { font-size: 1rem; }    /* ikut preferensi user — lebih accessible */
+
+  
+
+ 
