@@ -1,0 +1,183 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; padding: 0; 
+} 
+:root { 
+  --primary: #2E86C1; 
+  --dark:    #2C3E50; 
+  --light:   #F8F9FA; 
+  --gap:     1rem; 
+} 
+body { 
+  font-family: 'Segoe UI', 
+    Arial, sans-serif; 
+  color: var(--dark); 
+  line-height: 1.6; 
+} 
+img { 
+  max-width: 100%; 
+  display: block; 
+} 
+  
+/* Container */ 
+.container { 
+  width: 90%; 
+  max-width: 1100px; 
+  margin: 0 auto; 
+} 
+  
+/* Header — mobile: stacked */ 
+.site-header { 
+  background: var(--dark); 
+  padding: 1rem 0; 
+  position: sticky; 
+  top: 0; z-index: 100; 
+} 
+.site-header .container { 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  gap: 0.75rem; 
+} 
+.logo { 
+  color: white; 
+  font-weight: 700; 
+  font-size: 1.25rem; 
+} 
+.main-nav { 
+  display: flex;
+   flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 0.5rem 1rem; 
+} 
+.main-nav a { 
+  color: #BDC3C7; 
+  text-decoration: none; 
+  font-size: 0.9rem; 
+} 
+.main-nav a:hover { 
+  color: white; 
+} 
+  
+/* Hero — mobile: kolom */ 
+.hero { 
+  display: flex; 
+  flex-direction: column; 
+  gap: var(--gap); 
+  padding: 2rem 0; 
+} 
+.hero-teks h1 { 
+  font-size: 1.75rem; 
+  line-height: 1.2; 
+  margin-bottom: 0.75rem; 
+} 
+.hero-teks p { 
+  color: #555; 
+  margin-bottom: 1rem; 
+} 
+.btn { 
+  display: inline-block; 
+  background: var(--primary); 
+  color: white; 
+  padding: 0.6rem 1.5rem; 
+  border-radius: 6px; 
+  text-decoration: none; 
+  font-weight: 600; 
+} 
+.btn:hover { 
+  background: #1A6B9A; 
+} 
+  
+/* Layanan — mobile: 1 kolom */ 
+.layanan { 
+  padding: 2rem 0; 
+} 
+.layanan h2 { 
+  text-align: center; 
+  margin-bottom: 1.5rem; 
+ font-size: 1.5rem; 
+} 
+.kartu-grid { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: var(--gap); 
+} 
+.kartu { 
+  background: white; 
+  border: 1px solid #E0E0E0; 
+  border-radius: 8px; 
+  padding: 1.5rem; 
+  text-align: center; 
+} 
+.kartu span { 
+  font-size: 2.5rem; 
+} 
+.kartu h3 { 
+  margin: 0.5rem 0; 
+} 
+  
+/* Footer — mobile: 1 kolom */ 
+.site-footer { 
+  background: var(--dark); 
+  color: #BDC3C7; 
+  padding: 2rem 0; 
+  margin-top: 2rem; 
+} 
+.footer-grid { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 1.5rem; 
+} 
+.site-footer h4 { 
+  color: white; 
+  margin-bottom: 0.5rem; 
+} 
+.site-footer ul { 
+  list-style: none; 
+} 
+.site-footer a { 
+  color: #BDC3C7; 
+  text-decoration: none; 
+} 
+  
+@media (min-width: 768px) { 
+  /* Header: logo kiri, nav kanan */ 
+  .site-header .container { 
+    flex-direction: row;
+     justify-content: space-between; 
+  } 
+  /* Hero: dua kolom */ 
+  .hero { 
+    flex-direction: row; 
+    align-items: center; 
+  } 
+  .hero-teks { flex: 1; } 
+  .hero-gambar { flex: 1; } 
+  .hero-teks h1 { font-size: 2rem; } 
+  
+  /* Layanan: 2 kolom */ 
+  .kartu-grid { 
+    grid-template-columns: 
+      repeat(2, 1fr); 
+  } 
+  /* Footer: 2 kolom */ 
+  .footer-grid { 
+    grid-template-columns: 
+      repeat(2, 1fr); 
+  } 
+} 
+  
+@media (min-width: 1024px) { 
+  .hero-teks h1 { font-size: 2.75rem; } 
+  
+  /* Layanan: 3 kolom */ 
+  .kartu-grid { 
+    grid-template-columns: 
+      repeat(3, 1fr); 
+  } 
+  /* Footer: 3 kolom */ 
+  .footer-grid { 
+    grid-template-columns: 
+      repeat(3, 1fr); 
+  } 
+} 

@@ -1,0 +1,109 @@
+*, *::before, *::after { 
+  box-sizing: border-box; 
+  margin: 0; padding: 0; 
+} 
+body { 
+  font-family: Arial; 
+  padding: 1.5rem; 
+  background: #F8F9FA; 
+} 
+h1 { margin-bottom: 1rem; } 
+  
+/* ── Grid 3 kolom ── */ 
+.grid-dasar { 
+  display: grid; 
+  grid-template-columns: 
+    repeat(3, 1fr); 
+  gap: 1rem; 
+  margin-bottom: 2rem; 
+} 
+.grid-dasar div { 
+  background: #D6EAF8; 
+  padding: 1.5rem; 
+  text-align: center; 
+  border-radius: 6px; 
+} 
+  
+/* ── Layout Halaman ── */ 
+.layout-halaman { 
+  display: grid; 
+  grid-template-columns: 
+    200px 1fr 150px; 
+  grid-template-rows: 
+    auto 300px auto; 
+  grid-template-areas: 
+    'header  header  header' 
+    'sidebar konten  aside' 
+    'footer  footer  footer'; 
+  gap: 0.5rem; 
+  margin-bottom: 2rem; 
+} 
+.l-header { 
+  grid-area: header; 
+  background: #2C3E50; 
+  color: white; padding: 1rem; 
+} 
+.l-sidebar { 
+  grid-area: sidebar; 
+  background: #D5F5E3; 
+  padding: 1rem; 
+} 
+.l-konten { 
+  grid-area: konten; 
+  background: white; 
+  padding: 1rem; 
+  border: 1px solid #ddd; 
+} 
+.l-aside { 
+  grid-area: aside; 
+  background: #FEF9E7; 
+  padding: 1rem; 
+} 
+.l-footer { 
+  grid-area: footer; 
+  background: #2C3E50; 
+  color: white; padding: 1rem; 
+} 
+  
+/* ── Grid Responsif Otomatis ── */ 
+.grid-auto { 
+  display: grid;
+   grid-template-columns: 
+    repeat(auto-fit, 
+           minmax(120px, 1fr)); 
+  gap: 0.75rem; 
+} 
+.grid-auto div { 
+  background: #FADBD8; 
+  padding: 1.5rem; 
+  text-align: center; 
+  border-radius: 6px; 
+  font-weight: bold; 
+} 
+ 
+.galeri { 
+  display: grid; 
+  grid-template-columns: 
+    repeat(4, 1fr); 
+  gap: 0.5rem; 
+  margin-top: 2rem; 
+} 
+.galeri div { 
+  background: #D5D8DC; 
+  padding: 2rem; 
+  text-align: center; 
+  border-radius: 4px; 
+} 
+/* Span 2 baris & 2 kolom */ 
+.g-besar { 
+  grid-column: span 2; 
+  grid-row: span 2; 
+  background: #2E86C1; 
+  color: white; 
+} 
+/* Span seluruh lebar */ 
+.g-lebar { 
+  grid-column: 1 / -1; 
+  background: #27AE60; 
+  color: white; 
+}  

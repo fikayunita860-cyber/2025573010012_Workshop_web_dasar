@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+details {
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+summary {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+details[open] summary {
+  color: blue;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box img {
+  width: 100%;
+  display: block;
+}
+
+/* overlay pakai before */
+.img-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* teks */
+.img-box span {
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: 0.3s;
+}
+
+/* hover efek */
+.img-box:hover::before {
+  opacity: 1;
+}
+
+.img-box:hover span {
+  opacity: 1;
+}
+
+/* ================= */
+/* 3. PROGRESS BAR */
+/* ================= */
+.progress {
+  height: 20px;
+  background: #ddd;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* fill pakai before */
+.progress::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: var(--progress);
+  background: green;
+}
