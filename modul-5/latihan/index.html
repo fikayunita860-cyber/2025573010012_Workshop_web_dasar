@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>StudySpace - Platform Belajar</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white transition">
+
+  <!-- Navbar -->
+  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">StudySpace</h1>
+
+      <nav class="hidden md:flex gap-6">
+        <a href="#fitur">Fitur</a>
+        <a href="#kelas">Kelas</a>
+        <a href="#review">Review</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#kelas" class="btn-primary">Mulai Belajar</a>
+
+        <button id="toggleDark" class="px-3 py-2 bg-gray-200 dark:bg-gray-700 rounded">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 items-center">
+
+      <div>
+        <span class="badge">Platform Edukasi</span>
+
+        <h1 class="text-3xl md:text-5xl font-bold mt-4">
+          Belajar lebih mudah dan fleksibel
+        </h1>
+
+        <p class="mt-4 text-gray-600 dark:text-gray-300">
+          Akses berbagai materi pembelajaran kapan saja dan di mana saja.
+        </p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="#fitur" class="btn-primary">Lihat Fitur</a>
+          <a href="#kelas" class="btn-secondary">Lihat Kelas</a>
+        </div>
+      </div>
+
+      <div>
+        <img 
+          src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+          class="w-full h-64 object-cover rounded-xl shadow-lg"
+          alt="Belajar Online">
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Fitur -->
+  <section id="fitur" class="py-16">
+    <h2 class="section-title">Fitur Utama</h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=300" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="font-bold">Materi Lengkap</h3>
+        <p>Akses berbagai topik pembelajaran</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="font-bold">Video Interaktif</h3>
+        <p>Belajar dengan video menarik</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552581234-26160f608093" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="font-bold">Sertifikat</h3>
+        <p>Dapatkan sertifikat setelah belajar</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kelas -->
+  <section id="kelas" class="py-16 bg-gray-100 dark:bg-gray-800">
+    <h2 class="section-title">Kelas Populer</h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="font-bold">Web Development</h3>
+        <p>Belajar HTML, CSS, dan JavaScript</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="font-bold">UI/UX Design</h3>
+        <p>Desain tampilan aplikasi modern</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c" class="w-full h-48 object-cover rounded mb-3">
+        <h3 class="font-bold">Data Science</h3>
+        <p>Analisis data dan machine learning</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Review -->
+  <section id="review" class="py-16">
+    <h2 class="section-title">Review Pengguna</h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div class="card">"Belajar jadi lebih mudah!"</div>
+      <div class="card">"Materinya lengkap dan jelas."</div>
+      <div class="card">"Sangat membantu untuk pemula."</div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-white dark:bg-gray-800 py-10">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+      <div>
+        <h3 class="font-bold">StudySpace</h3>
+        <p>Platform belajar online terbaik</p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold">Layanan</h4>
+        <p>Kelas</p>
+        <p>Materi</p>
+      </div>
+
+      <div>
+        <h4 class="font-semibold">Kontak</h4>
+        <p>halo@studyspace.com</p>
+      </div>
+    </div>
+
+    <p class="text-center mt-6">© 2026 StudySpace</p>
+  </footer>
+
+  <!-- SCRIPT DARK MODE -->
+  <script>
+    const toggle = document.getElementById('toggleDark');
+
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+      toggle.innerText = "☀️";
+    }
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        toggle.innerText = "☀️";
+      } else {
+        localStorage.setItem('theme', 'light');
+        toggle.innerText = "🌙";
+      }
+    });
+  </script>
+
+</body>
+</html>
