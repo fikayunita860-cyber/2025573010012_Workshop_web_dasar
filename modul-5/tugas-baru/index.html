@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="id" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AutoLux - Showroom Mobil</title>
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white transition duration-300">
+
+  <!-- Navbar -->
+  <header class="bg-white dark:bg-gray-800 shadow sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex justify-between items-center p-4">
+      <h1 class="text-xl font-bold">AutoLux</h1>
+
+      <nav class="hidden md:flex gap-6">
+        <a href="#mobil">Mobil</a>
+        <a href="#harga">Harga</a>
+        <a href="#kontak">Kontak</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <a href="#mobil" class="btn-primary">Lihat Mobil</a>
+
+        <button id="toggleDark" class="px-3 py-2 bg-gray-200 dark:bg-gray-700 rounded">
+          🌙
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="py-16">
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-10 px-4 items-center">
+
+      <div>
+        <span class="badge">Showroom Mobil Premium</span>
+
+        <h1 class="text-4xl font-bold mt-4">
+          Temukan mobil impianmu sekarang
+        </h1>
+
+        <p class="mt-4 text-gray-600 dark:text-gray-300">
+          Koleksi mobil terbaru dengan harga terbaik dan kualitas terjamin.
+        </p>
+
+        <div class="mt-6 flex gap-4">
+          <a href="#mobil" class="btn-primary">Lihat Koleksi</a>
+          <a href="#harga" class="btn-secondary">Cek Harga</a>
+        </div>
+      </div>
+
+      <img 
+        src="https://images.unsplash.com/photo-1503376780353-7e6692767b70"
+        class="w-full h-64 object-cover rounded-xl shadow animate-pulse"
+      >
+
+    </div>
+  </section>
+
+  <!-- Mobil -->
+  <section id="mobil" class="py-16">
+    <h2 class="section-title">Mobil Populer</h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80" class="img">
+        <h3 class="font-bold">Toyota Supra</h3>
+        <p>Sport car performa tinggi</p>
+        <p class="price">Rp 2.200.000.000</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" class="img">
+        <h3 class="font-bold">BMW M4</h3>
+        <p>Elegan dan bertenaga</p>
+        <p class="price">Rp 1.800.000.000</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d" class="img">
+        <h3 class="font-bold">Tesla Model S</h3>
+        <p>Mobil listrik masa depan</p>
+        <p class="price">Rp 2.500.000.000</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2?auto=format&fit=crop&w=800&q=80" class="img">
+        <h3 class="font-bold">Mercedes AMG</h3>
+        <p>Mewah dan nyaman</p>
+        <p class="price">Rp 3.000.000.000</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800&q=80" class="img">
+        <h3 class="font-bold">Audi R8</h3>
+        <p>Desain modern sporty</p>
+        <p class="price">Rp 4.000.000.000</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1614200179396-2bdb77ebf81b?auto=format&fit=crop&w=800&q=80" class="img">
+        <h3 class="font-bold">Lamborghini Huracan</h3>
+        <p>Supercar impian</p>
+        <p class="price">Rp 5.500.000.000</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Harga -->
+  <section id="harga" class="py-16 bg-gray-100 dark:bg-gray-800">
+    <h2 class="section-title">Paket Pembelian</h2>
+
+    <div class="max-w-6xl mx-auto grid md:grid-cols-3 gap-6 px-4">
+
+      <div class="card text-center">
+        <h3 class="font-bold text-xl">Cash</h3>
+        <p class="my-4">Bayar langsung</p>
+        <p>Diskon spesial</p>
+      </div>
+
+      <div class="card text-center">
+        <h3 class="font-bold text-xl">Kredit</h3>
+        <p class="my-4">Cicilan ringan</p>
+        <p>DP mulai 10%</p>
+      </div>
+
+      <div class="card text-center">
+        <h3 class="font-bold text-xl">Leasing</h3>
+        <p class="my-4">Fleksibel</p>
+        <p>Untuk bisnis</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Kontak -->
+  <section id="kontak" class="py-16">
+    <h2 class="section-title">Hubungi Kami</h2>
+
+    <div class="max-w-xl mx-auto px-4">
+      <input type="text" placeholder="Nama" class="input">
+      <input type="email" placeholder="Email" class="input">
+      <button class="btn-primary w-full">Kirim</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-10 dark:bg-gray-800">
+    © 2026 AutoLux
+  </footer>
+
+  <!-- DARK MODE SCRIPT -->
+  <script>
+    const toggle = document.getElementById('toggleDark');
+
+    if (localStorage.getItem('theme') === 'dark') {
+      document.documentElement.classList.add('dark');
+      toggle.textContent = "☀️";
+    }
+
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+
+      if (document.documentElement.classList.contains('dark')) {
+        localStorage.setItem('theme', 'dark');
+        toggle.textContent = "☀️";
+      } else {
+        localStorage.setItem('theme', 'light');
+        toggle.textContent = "🌙";
+      }
+    });
+  </script>
+
+</body>
+</html>
