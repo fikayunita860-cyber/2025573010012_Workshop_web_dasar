@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List App</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>📋 To Do List App</h1>
+      <p>Kelola tugas harianmu dengan mudah</p>
+    </header>
+
+    <!-- Input Area -->
+    <section class="input-section">
+
+      <input
+        type="text"
+        id="taskInput"
+        placeholder="Masukkan tugas..."
+        maxlength="100"
+      >
+
+      <select id="priorityInput">
+        <option value="Rendah">Rendah</option>
+        <option value="Sedang">Sedang</option>
+        <option value="Tinggi">Tinggi</option>
+      </select>
+
+      <button id="addTaskBtn">Tambah</button>
+
+    </section>
+
+    <p id="errorMessage"></p>
+
+    <!-- Filter -->
+    <section class="filter-section">
+
+      <button class="filter-btn active" data-filter="all">
+        Semua
+      </button>
+
+      <button class="filter-btn" data-filter="active">
+        Aktif
+      </button>
+
+      <button class="filter-btn" data-filter="completed">
+        Selesai
+      </button>
+
+    </section>
+
+    <!-- Task List -->
+    <section class="task-section">
+      <ul id="taskList"></ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+
+      <span id="taskCounter">
+        0 tugas tersisa
+      </span>
+
+      <button id="clearCompleted">
+        Hapus Semua Selesai
+      </button>
+
+    </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
